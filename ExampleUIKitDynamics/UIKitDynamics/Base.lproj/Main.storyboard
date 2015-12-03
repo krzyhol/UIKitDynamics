@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PKc-ZO-K3b">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wQk-l2-5kc">
+            <objects>
+                <navigationController id="PKc-ZO-K3b" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jL4-Nd-1KB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hGR-Hd-sCV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lne-bu-QR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-418" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIKitDynamics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gmt-py-OtH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gmt-py-OtH" secondAttribute="trailing" id="0a1-ID-zRO"/>
+                            <constraint firstItem="gmt-py-OtH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Odh-uT-Mcj"/>
+                            <constraint firstItem="gmt-py-OtH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mUc-fG-VMx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gmt-py-OtH" secondAttribute="bottom" id="xhq-KJ-AqT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ovd-kx-u52"/>
+                    <connections>
+                        <outlet property="tableView" destination="gmt-py-OtH" id="p6e-rG-Q7I"/>
+                        <segue destination="E0O-yl-Ma0" kind="show" identifier="" id="wxN-pW-60G"/>
+                        <segue destination="0X8-qv-IAC" kind="show" identifier="" id="72V-ur-r1S"/>
+                        <segue destination="Zmo-3y-CAP" kind="show" identifier="" id="Vyj-1H-c5v"/>
+                        <segue destination="WFE-ZB-e6e" kind="show" identifier="" id="SDm-YV-FMF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="359"/>
+        </scene>
+        <!--Gravitation View Controller-->
+        <scene sceneID="RKb-3A-T8i">
+            <objects>
+                <viewController storyboardIdentifier="GravitationViewControllerIdentifier" id="E0O-yl-Ma0" customClass="GravitationViewController" customModule="UIKitDynamics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GfV-bG-qyD"/>
+                        <viewControllerLayoutGuide type="bottom" id="v6r-5R-mRP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jqW-S9-Yj3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DoR1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9cF-zH-jbQ">
+                                <rect key="frame" x="152" y="72" width="100" height="100"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="9cF-zH-jbQ" id="PaF-c8-psw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jW0-5e-U3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="-1269"/>
+        </scene>
+        <!--Collisions View Controller-->
+        <scene sceneID="cXT-FF-Fdg">
+            <objects>
+                <viewController storyboardIdentifier="CollisionsViewControllerIdentifier" id="0X8-qv-IAC" customClass="CollisionsViewController" customModule="UIKitDynamics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g0N-2U-ezS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kvp-aH-TYm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XL6-Ba-Pfj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DoR2.png" translatesAutoresizingMaskIntoConstraints="NO" id="oS0-Pd-jnA">
+                                <rect key="frame" x="227" y="133" width="80" height="80"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logo - brak kolizji" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEQ-PQ-bRu">
+                                <rect key="frame" x="174" y="72" width="127" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tekst - brak kolizji" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BM5-1F-PVe">
+                                <rect key="frame" x="20" y="72" width="146" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DoR1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uEz-28-GJc">
+                                <rect key="frame" x="165" y="229" width="80" height="80"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="collisionOneLabel" destination="BM5-1F-PVe" id="3FY-PF-awE"/>
+                        <outlet property="collisionTwoLabel" destination="zEQ-PQ-bRu" id="fWr-uN-2x1"/>
+                        <outlet property="logoImageView" destination="oS0-Pd-jnA" id="a24-7Z-A5N"/>
+                        <outlet property="textImageView" destination="uEz-28-GJc" id="R3R-u3-an4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIh-dX-t6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="-606"/>
+        </scene>
+        <!--Attachment View Controller-->
+        <scene sceneID="JxC-oo-Sop">
+            <objects>
+                <viewController storyboardIdentifier="AttachmentViewControllerIdentifier" id="Zmo-3y-CAP" customClass="AttachmentViewController" customModule="UIKitDynamics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OV8-8d-McS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Keo-ku-Sjc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qnj-eh-1iX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DoR2.png" translatesAutoresizingMaskIntoConstraints="NO" id="46A-E0-Glu">
+                                <rect key="frame" x="166" y="124" width="80" height="80"/>
+                                <animations/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DoR1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4PF-MW-VQR">
+                                <rect key="frame" x="166" y="334" width="80" height="80"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="QMu-zB-PEf" appends="YES" id="cq7-ni-EyC"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="46A-E0-Glu" id="c9a-AJ-drV"/>
+                        <outlet property="textImageView" destination="4PF-MW-VQR" id="O1I-Fl-YKB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W60-GQ-H1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="QMu-zB-PEf">
+                    <connections>
+                        <action selector="handleAttachmentGesture:" destination="Zmo-3y-CAP" id="HXh-DJ-fwO"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1521" y="62"/>
+        </scene>
+        <!--Spring View Controller-->
+        <scene sceneID="X3y-Pq-7Oa">
+            <objects>
+                <viewController storyboardIdentifier="SpringViewControllerIdentifier" id="WFE-ZB-e6e" customClass="SpringViewController" customModule="UIKitDynamics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7H1-2L-tp9"/>
+                        <viewControllerLayoutGuide type="bottom" id="cv9-5w-caT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TtM-Uh-pLh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DoR2.png" translatesAutoresizingMaskIntoConstraints="NO" id="B1x-3N-CIf">
+                                <rect key="frame" x="192" y="90" width="80" height="80"/>
+                                <animations/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DoR1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xMH-9J-gUi">
+                                <rect key="frame" x="192" y="210" width="80" height="80"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KmJ-Uf-K6V" appends="YES" id="13F-1E-3tu"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="B1x-3N-CIf" id="wMS-aE-eLl"/>
+                        <outlet property="textImageView" destination="xMH-9J-gUi" id="KjC-gi-CUR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8I-4q-hob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="KmJ-Uf-K6V">
+                    <connections>
+                        <action selector="handleAttachmentGesture:" destination="WFE-ZB-e6e" id="Iag-JQ-8t3"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1517" y="734"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DoR1.jpg" width="450" height="450"/>
+        <image name="DoR2.png" width="200" height="160"/>
+    </resources>
+</document>
